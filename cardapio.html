@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cardápio</title>
+    <style>
+        body{
+            background-color: #f7a204;
+            padding: 0;
+            margin: 0;
+        }
+        .carte{
+    grid-area: carte;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+ 
+.bot-carte{
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-self: flex-end;
+    background: #eae2b7;
+}
+
+.carte-sign{
+    width: 120px;
+    height: 70px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    background: #eae2b7;
+    color: #f7a204;
+    font-size: 35px;
+}
+.carte-sign:nth-child(2){
+    border-left: 4px solid #f77f00;
+    border-right: 4px solid #f77f00;
+}
+
+.main-carte-sign{
+    transform: translate(0, 6px);
+    text-align: center;
+    width: 270px;
+    padding: 5px 10px; 
+    color: #f7a204;
+    border: 4px solid #f7a204;
+    background: #eae2b7;  
+    grid-area: mainCarte;
+    font-size: 20px;
+    border-radius: 10px; 
+}
+.presentation{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #003049;
+    width: 100%;
+    height: 100px;
+    border-bottom: 8px solid #d62828;
+}
+.logo{
+    width: 100px;
+    height: 100px;
+}
+.title{
+    color: #f7a204;
+    font-size: 45px;
+}
+    </style>
+</head>
+<body>
+    <div class="presentation">
+        <img src="/img/Logo 2.png" alt="logo easy eats" class="logo">
+        <h2 class="title">Cardápio</h2>
+    </div>
+
+    <div class="carte">
+        <div class="main-carte">
+            <div class="main-carte-sign">SALAS PARTICIPANTES</div>
+        </div>
+
+        <div class="bot-carte">
+            <div class="carte-sign">4M1</div>
+            <div class="carte-sign">4M2</div>
+            <div class="carte-sign">4M3</div>
+        </div>
+    </div>
+</body>
+</html>
