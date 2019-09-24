@@ -1,13 +1,13 @@
 body{
     display: grid;
-    grid-template-rows: 120px 250px 120px 200px;
-    grid-template-columns: 50px 1fr 2fr 1fr 50px ;
+    grid-template-rows: 120px 250px 120px 300px;
+    grid-template-columns: 1fr 1fr 1fr;
     background-color: #003049;
     grid-template-areas: 
-        "header header header header header"
-        "loader loader loader loader loader"
-        "carte carte carte carte carte"
-        "carte-acess carte-acess carte-acess carte-acess carte-acess";
+        "header header header"
+        "loader loader loader"
+        "carte carte carte"
+        "carte-acess carte-acess carte-acess";
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -48,6 +48,8 @@ body{
     background: #eae2b7;
 }
 
+
+
 .carte-sign{
     width: 120px;
     height: 70px;
@@ -60,10 +62,6 @@ body{
     font-size: 35px;
 }
 
-.carte-sign:nth-child(2){
-    border-left: 4px solid #f77f00;
-    border-right: 4px solid #f77f00;
-}
 
 .main-carte-sign{
     transform: translate(0, 6px);
