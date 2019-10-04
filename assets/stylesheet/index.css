@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+
 body{
     display: grid;
     grid-template-rows: 120px 250px 120px 250px 0px 150px;
@@ -92,7 +94,7 @@ a{
 
 .carte-acess{
     grid-area: carte-acess;
-    background: url(/img/back-pedido.jpg);
+    background: url(/assets/img/back-pedido.jpg);
     filter: blur(2.5px);
     z-index: -1;
 }
