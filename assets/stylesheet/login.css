@@ -56,6 +56,7 @@ body {
   border-radius: 5px;
   background-color: #747474;
   color: #fff;
+  cursor: pointer;
 }
 
 .container {
@@ -74,6 +75,7 @@ body {
   color: #fff;
   font-size: 20px;
   font-weight: bolder;
+  margin-top: 20px;
 }
 
 .register a{
