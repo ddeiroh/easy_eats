@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    font-family: 'Oswald', sans-serif;
+  }
+
 body {
     background-color: #003049;
     width: 100vw;
@@ -53,9 +63,21 @@ body {
     padding: 10px;
     border-radius: 10px;
     padding: 20px 40px;
+    margin: 10px;
   }
 
   .select-menu{
       padding: 10px;
       outline: none;
+  }
+
+  .btn-login {
+    width: 120px;
+    height: 35.5px;
+    font-size: 14px;
+    font-weight: bolder;
+    border-radius: 5px;
+    background-color: #747474;
+    color: #fff;
+    cursor: pointer;
   }
