@@ -38,7 +38,7 @@ body {
   color: #fff;
   font-size: 20px;
   font-weight: bolder;
-  margin-bottom: 15px;
+  margin: 10px 20px 10px 20px;
 }
 
 .campo::placeholder {
@@ -72,6 +72,7 @@ body {
 
 .register{
   align-self: center;
+  margin-top: 25px; 
   color: #fff;
   font-size: 20px;
   font-weight: bolder;
@@ -79,7 +80,7 @@ body {
 }
 
 .register a{
-  color: #000;
+  color: #fff;
   font-weight: bolder;
   cursor: pointer;
 }
