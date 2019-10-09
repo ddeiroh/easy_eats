@@ -6,124 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Cardápio</title>
-    <style>
-        body {
-            display: grid;
-            background-color: #f7a204;
-            grid-template-rows: 10% 1fr;
-            grid-template-areas: 1fr 1fr 1fr;
-            grid-template-areas:
-                "presentation presentation presentation"
-                "carte carte carte"
-                "orders orders orders"
-            ;
-            
-        }
-
-        a {
-            text-decoration: none;
-        }
-
-        * {
-            padding: 0;
-            margin: 0;
-            box-sizing: border-box;
-        }
-
-        .carte {
-            grid-area: carte;
-            display: flex;
-            flex-flow: column nowrap;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .main-carte-sign {
-            transform: translate(0, 6px);
-            text-align: center;
-            width: 270px;
-            padding: 5px 10px;
-            color: #f7a204;
-            border: 4px solid #f7a204;
-            background: #eae2b7;
-            grid-area: mainCarte;
-            font-size: 20px;
-            border-radius: 10px;
-        }
-
-        .presentation {
-            grid-area: presentation;
-            display: flex;
-            flex-flow: row nowrap;
-            justify-content: space-evenly;
-            align-items: center;
-            background-color: #003049;
-            width: 100%;
-            height: 100px;
-            border-bottom: 8px solid #d62828;
-        }
-
-        .logo {
-            width: 100px;
-            height: 100px;
-        }
-
-        .title {
-            color: #f7a204;
-            font-size: 45px;
-        }
-
-        .order {
-            display: flex;
-            flex-flow: column nowrap;
-            justify-content: center;
-            align-items: center;
-            background-color: rgba(151, 151, 151, .8);
-            margin: 10px 0;
-            padding: 10px;
-            width: 400px;
-            height: auto;
-        }
-
-        .order div, h2, p, button{
-            margin: 3px;
-        }
-
-        .order div{
-            font-size: 18px;
-        }
-
-        .hashtag {
-            display: flex;
-            width: 45px;
-            height: 45px;
-            font-size: 15px;
-            color: #eae2b7;
-            background-color: #000;
-            border-radius: 30px;
-            justify-content: center;
-            align-items: center; 
-        }
-
-        .orders {
-            display: flex;
-            flex-flow: nowrap column;
-            justify-content: center;
-            align-items: center;
-            grid-area: orders;
-        }
-
-        .peca-pedido{
-            width: 60px;
-            height: 30px;
-        }
-
-    </style>
+    <link rel="stylesheet" href="/assets/stylesheet/menu.css">
 </head>
 
 <body>
     <div class="presentation">
-        <img src="img/logo1.png" alt="logo easy eats" class="logo">
+        <img src="/assets/img/logo1.png" alt="logo easy eats" class="logo">
         <h2 class="title">Cardápio</h2>
     </div>
 
