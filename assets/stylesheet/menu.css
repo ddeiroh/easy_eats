@@ -12,12 +12,12 @@
 body {
     display: grid;
     background-color: #f7a204;
-    grid-template-rows: 10% 1fr;
+    grid-template-rows: 90px 90px 1fr;
     grid-template-columns: 1fr;
     grid-template-areas:
-        "presentation presentation presentation"
-        "carte carte carte"
-        "orders orders orders"
+        "presentation"
+        "carte"
+        "orders"
     ;
     
 }
@@ -26,25 +26,35 @@ a {
     text-decoration: none;
 }
 
-.carte {
+.carte{
+    width: 100%;
     grid-area: carte;
     display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
     align-items: center;
+    overflow-x: auto;
 }
 
-.main-carte-sign {
-    transform: translate(0, 6px);
-    text-align: center;
-    width: 270px;
-    padding: 5px 10px;
-    color: #f7a204;
-    border: 4px solid #f7a204;
+.bot-carte{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
     background: #eae2b7;
-    grid-area: mainCarte;
+}
+
+.carte-sign{
+    width: 120px;
+    height: 70px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    background: #eae2b7;
+    color: #f7a204;
     font-size: 20px;
-    border-radius: 10px;
+    text-align: center;
 }
 
 .presentation {

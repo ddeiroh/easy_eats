@@ -3,124 +3,17 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="/assets/img/easy.ico">
     <title>Área Administrativa</title>
-    <style>
-    @import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    border: none;
-    outline: none;
-    font-family: 'Oswald', sans-serif;
-  }
-
-body {
-    display: grid;
-    background-color: #f7a204;
-    grid-template-rows: 10% 20% 1fr;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-        "presentation"
-        "cad-prod"
-        "orders"
-    ;
-    
-}
-
-a{ text-decoration: none;}
-
-.presentation {
-    grid-area: presentation;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: #003049;
-    width: 100%;
-    height: 100px;
-    border-bottom: 8px solid #d62828;
-}
-
-.cadastro-produto{
-    grid-area: cad-prod;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-}
-.orders{
-    grid-area: orders;
-}
-
-.options{
-    width: 220px;
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    align-self: flex-end;
-    align-items: center;
-    flex-flow: row nowrap;
-}
-
-.options li{
-    background: #003049;
-    border-radius: 5px;
-    padding: 5px;
-    color: #fefefe;
-}
-
-.form-cadastro{
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-    margin: 10px;
-}
-
-.campo {
-    width: 300px;
-    margin: 5px 0;
-    padding: 5px;
-}
-
-.btn{
-    padding: 5px;
-}
-
-.part{
-    margin: 0 auto;
-    border-top: 3px solid #003049 
-}
-
-.logo {
-    width: 100px;
-    height: 100px;
-}
-
-.title {
-    color: #f7a204;
-    font-size: 32px;
-}
-
-.main{
-    margin: 5px 0;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-self: center;
-}
-
-    </style>
+    <link rel="stylesheet" href="/assets/stylesheet/admin.css">
 </head>
 
 <body>
     <div class="presentation">
         <img src="/assets/img/logo1.png" alt="logo easy eats" class="logo">
-        <h2 class="title">Área Administrativa</h2>
+        <h2>Área Administrativa</h2>
     </div>
 
     <div class="main">
@@ -128,10 +21,10 @@ a{ text-decoration: none;}
 <div class="cadastro-produto">
 
     <ul class="options">
-            <a href=""><li>Pedidos</li></a>
-            <a href=""><li>Entregue</li></a>
-            <a href=""><li>Voltar</li></a>
-            <a href=""><li>Sair</li></a>
+            <a href=""><li class="btn-op">Pedidos</li></a>
+            <a href=""><li class="btn-op">Entregue</li></a>
+            <a href=""><li class="btn-op">Voltar</li></a>
+            <a href=""><li class="btn-op">Sair</li></a>
     </ul>    
     
 
@@ -148,7 +41,7 @@ a{ text-decoration: none;}
 
     
     <div class="part">
-        <h3>Seus produtos cadastrados</h3>
+        <h3 >Seus produtos cadastrados</h3>
     </div>
 
     <!--Aui é onde seão inseridos os pedidos -->
